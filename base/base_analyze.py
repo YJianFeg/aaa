@@ -2,8 +2,8 @@ import yaml
 
 
 def analyze_data(file_name, case_key):
-    with open("./data/%s" % file_name) as f:
-        data = yaml.load(f,  Loader=yaml.FullLoader)
+    with open("./data/%s" % file_name, encoding='utf-8') as f:
+        data = yaml.load(f, Loader=yaml.FullLoader)
         temp_data = data[case_key]
         data_list = list()
         for item in temp_data.values():
