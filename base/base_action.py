@@ -35,7 +35,6 @@ class BaseAction:
         except Exception:
             return False
 
-
     def is_toast_exist(self, message):
         """
         根据部分toast的内容，判断该toast是否存在
