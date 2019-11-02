@@ -16,6 +16,9 @@ class TestLogin:
         time.sleep(3)
         self.driver.quit()
 
+    def test_login(self):
+        self.page.home.login_if_not(self.page)
+
     @pytest.mark.parametrize('args', analyze_data('login_data.yaml', 'test_login'))
     def test_login(self, args):
         username = args['username']
