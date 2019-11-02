@@ -19,7 +19,7 @@ def init_driver():
     desired_caps['automationName'] = 'Uiautomator2'
 
     # # 不需要重置应用
-    desired_caps['noReset'] = True
+    # desired_caps['noReset'] = True
 
     # 连接appium服务器
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
